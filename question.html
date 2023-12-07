@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>bubub ˚ ༘♡ ⋆｡˚</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <div id="header">
+              <header>
+                <nav>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="question.html">Question</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="appreciation.html">Post</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+              </header>
+              <div class="content">
+                <h2>Bub's page</h2>
+                <h2>Bub's page</h2>
+              </div>
+            </div>
+          </div>
+
+        <div class="container">
+            <div class="question1">
+                <h3>i have a question for u, would u answer it?</h3>
+                <form id="answer-form">
+                    <button type="button" onclick="redirectToPage('yes')">Yes</button>
+                    <button type="button" onclick="redirectToPage('no')">No</button>
+                </form>
+
+            </div>   
+        </div>
+        
+        <script>
+            function redirectToPage(answer) {
+                if (answer === 'yes') {
+                    window.location.href = 'yes-page.html'; // Replace with the actual URL of the "Yes" page
+                } else if (answer === 'no') {
+                    window.location.href = 'no2-page.html'; // Replace with the actual URL of the "No" page
+                }
+            }
+
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+    </body>
+</html>
