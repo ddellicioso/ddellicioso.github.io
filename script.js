@@ -17,24 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const questionContainer = document.getElementById("question-container");
-
-    // Remove the 'hidden' class to make the container appear
-    questionContainer.classList.remove("hidden");
-});
-
-document.getElementById('question-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
-    redirectToPage();
-});
-
-function redirectToPage() {
-    // Redirect to another page when the "No" checkbox is checked
-    if (document.getElementById('noCheckbox').checked) {
-        window.location.href = 'no2-page.html';
-    }
-}
 
 
 function checkPassword() {
